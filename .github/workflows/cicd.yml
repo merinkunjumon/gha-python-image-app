@@ -3,8 +3,8 @@ name : CICD workflow for dev environment
 on :
   push:
     branches:
-     -feat/family
-
+    -feat/family
+    
 jobs:
   hello: 
     runs-on: ubuntu-latest
@@ -12,6 +12,6 @@ jobs:
       -name : step1
        run: date
       -name: step2
-       run: 
+       run: |
           pwd
           ls
