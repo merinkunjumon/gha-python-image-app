@@ -95,6 +95,7 @@ jobs:
         username: ${{ secrets.DEV_USERNAME }}
   #        password: ${{ secrets.DEV_PASSWORD }}
         key: ${{ secrets.DEV_KEY }}
+        passphrase: ${{ secrets.PASSPHRASE }}
         script: |
           sudo systemctl stop image-app.service
           sudo rm -Rf ~/app-src
